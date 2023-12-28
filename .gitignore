@@ -5,3 +5,4 @@
 /app/results/*
 *.pyc
 pyvenv.cfg
+app/configs/queue.json.bak.json
