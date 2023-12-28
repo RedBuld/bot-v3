@@ -1,0 +1,7 @@
+/Include/*
+/Lib/*
+/LitresCache/*
+/Scripts/*
+/app/results/*
+*.pyc
+pyvenv.cfg

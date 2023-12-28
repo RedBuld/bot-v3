@@ -1,0 +1,338 @@
+{
+    "bot_host": "http://127.0.0.1:8000/",
+    "queue_host": "http://127.0.0.1:8010/",
+    "downloader": {
+        "save_folder": "U:\\go-bot\\download-center-py\\app\\results",
+        "exec_folder": "U:\\go-bot\\download-center-py\\app\\exec",
+        "temp_folder": "U:\\go-bot\\download-center-py\\app\\temp",
+        "compression": {
+            "7z": "C:\\Program Files\\7Zip\\7z.exe",
+            "winrar": "C:\\Program Files\\WinRAR\\WinRar.exe"
+        },
+        "downloaders": {
+            "elib2ebook": {
+                "folder": "Elib2Ebook",
+                "exec": "Elib2Ebook.exe"
+            },
+            "litnet": {
+                "folder":"LitNet",
+                "exec": "LitNet.exe"
+            }
+        }
+    },
+    "groups": {
+        "litnet": {
+            "per_user": 1,
+            "simultaneously": 1,
+            "formats": ["fb2","epub"]
+        },
+        "books": {
+            "per_user": 5,
+            "simultaneously": 30,
+            "formats": ["fb2","epub"]
+        },
+        "manga": {
+            "per_user": 0,
+            "simultaneously": 0,
+            "formats": ["cbz"]
+        },
+        "ranobe": {
+            "per_user": 1,
+            "simultaneously": 10,
+            "formats": ["fb2","epub"]
+        }
+    },
+    "sites": {
+		"author.today": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 5,
+            "per_user": 1,
+            "group": "books",
+            "delay": 5
+        },
+		"bigliba.com": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"bookinbook.ru": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"bookinist.pw": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"booknet.com": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "proxy": "http://89.23.110.141:3128/",
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"booknet.ua": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "proxy": "http://89.23.110.141:3128/",
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"bookriver.ru": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"bookstab.ru": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"bookstime.ru": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"bookuruk.com": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"desu.me": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"dreame.com": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"fb2.top": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"ficbook.net": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"fictionbook.ru": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"hogwartsnet.ru": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"hub-book.com": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"i-gram.ru": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"ladylib.top": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"libbox.ru": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"libst.ru": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"litgorod.ru": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"litmarket.ru": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"litmir.me": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"litnet.com": {
+            "active": false,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "litnet",
+            "pause_by_user": 60
+        },
+		"litres.ru": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 300
+        },
+		"mir-knig.com": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"mybook.ru": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"online-knigi.com.ua": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"prodaman.ru": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"samlib.ru": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"tl.rulate.ru": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"topliba.com": {
+            "active": true,
+            "parameters": ["paging","images","auth"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"twilightrussia.ru": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        },
+		"wuxiaworld.ru": {
+            "active": false,
+            "parameters": ["paging","images"],
+            "simultaneously": 0,
+            "per_user": 0,
+            "group": "wuxiawaord",
+            "pause_by_user": 0,
+            "delay": 50
+        },
+		"xn--80ac9aeh6f.xn--p1ai": {
+            "active": true,
+            "parameters": ["paging","images"],
+            "simultaneously": 1,
+            "per_user": 1,
+            "group": "books",
+            "pause_by_user": 0
+        }
+	}
+}
